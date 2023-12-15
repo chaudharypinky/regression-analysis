@@ -1,0 +1,4 @@
+a = read.csv("Heart Failure Clinical Records.csv")
+View(a)
+model_a = lm(high_blood_pressure ~ smoking + serum_sodium, data = a)
+summary(model_a)
